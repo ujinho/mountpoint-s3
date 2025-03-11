@@ -18,6 +18,8 @@ use std::{path::PathBuf, process::Command};
 use tempfile::NamedTempFile;
 use test_case::test_case;
 
+mod common;
+
 use crate::common::creds::{get_sdk_default_chain_creds, get_subsession_iam_role};
 use crate::common::fuse::{mount_for_passing_fuse_fd, read_dir_to_entry_names};
 use crate::common::s3::{
